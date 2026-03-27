@@ -14,7 +14,7 @@ string String55(string text) {
     text += " ";
     for (int i = 0; i < text.size(); i++) {
         string simvol = text.substr(i, 1);
-        if ((simvol>="¿" && simvol<="ˇ") || simvol=="∏" || simvol=="®"){
+        if ((simvol>="–ê" && simvol<="—è") || simvol=="—ë" || simvol=="–Å"){
             word += simvol;
         }
         else {
@@ -26,7 +26,7 @@ string String55(string text) {
                 word = "";
             }
             else {
-                mword = "Õ≈ —ÀŒ¬Œ...\n";
+                mword = "–ù–ï –°–õ–û–í–û...\n";
                 break;
             }
         }
@@ -43,7 +43,7 @@ string Str18(string put) {
             c++;
         }
     }
-    if (c == 0) put = "\nƒ‡Ì ÌÂ ÔÛÚ¸: ¬ ÒÚÓÍÂ ÌÂÚ \\ \n";
+    if (c == 0) put = "\n–î–∞–Ω –Ω–µ –ø—É—Ç—å: –í —Å—Ç—Ä–æ–∫–µ –Ω–µ—Ç \\ \n";
     return put;
 }
 
@@ -53,7 +53,7 @@ string Str25(string num){
     int count = 0;
     for (int i = 0; i < num.size(); i++) {
         if (num[i] < '0' || num[i] > '9') {
-            return "ÕÂ ˜ËÒÎÓ";
+            return "–ù–µ —á–∏—Å–ª–æ";
         }
     }
     for (int i = num.size() - 1; i >= 0; i--) { 
@@ -84,7 +84,7 @@ string Str39(string text){
         }
     }
 
-    if (res.empty()) return "ÕÂÚ ÛÌËÍ‡Î¸Ì˚ı";
+    if (res.empty()) return "–ù–µ—Ç —É–Ω–∏–∫–∞–ª—å–Ω—ã—Ö";
     return res;
 }
 
@@ -97,7 +97,7 @@ string Str30(string n20) {
         else if (s >= "A" && s <= "J") v = true;
         else if (s >= "a" && s <= "j") v = true;
         if (!v) {
-            return "Œ¯Ë·Í‡: ÌÂ‰ÓÔÛÒÚËÏ˚È ÒËÏ‚ÓÎ '" + s + "'";
+            return "–û—à–∏–±–∫–∞: –Ω–µ–¥–æ–ø—É—Å—Ç–∏–º—ã–π —Å–∏–º–≤–æ–ª '" + s + "'";
         }
     }
     int res = 0;
@@ -120,7 +120,7 @@ string Str30(string n20) {
 
 string t63(string mes) {
     using namespace std;
-    string let = "¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—“”‘’÷◊ÿŸ⁄€‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÏÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸˝˛ˇABWGDEVZIJKLMNOPRSTUFHCQYXabwgdevzijklmnoprstufhcqyx0123456789";
+    string let = "–ê–ë–í–ì–î–ï–ñ–ó–ò–ô–ö–õ–ú–ù–û–ü–†–°–¢–£–§–•–¶–ß–®–©–™–´–¨–≠–Æ–Ø–∞–±–≤–≥–¥–µ–∂–∑–∏–π–∫–ª–º–Ω–æ–ø—Ä—Å—Ç—É—Ñ—Ö—Ü—á—à—â—ä—ã—å—ç—é—èABWGDEVZIJKLMNOPRSTUFHCQYXabwgdevzijklmnoprstufhcqyx0123456789";
     string cod[] = {
         "._","_...",".__","__.","_..",".","..._","__..","..",".___",
         "_._","._..","__","_.","___",".__.","._.","...","_",".._",
@@ -160,7 +160,7 @@ void Five5() {
     ofstream fout("FN2.txt");
 
     if (!fin.is_open()) {
-        cout << "Œ¯Ë·Í‡: ÌÂ ÏÓ„Û ÓÚÍ˚Ú¸ FN1.txt";
+        cout << "–û—à–∏–±–∫–∞: –Ω–µ –º–æ–≥—É –æ—Ç–∫—Ä—ã—Ç—å FN1.txt";
     }
     string prim;
     while (getline(fin, prim)) {
@@ -181,15 +181,15 @@ void Five5() {
         }
         int ravpos = clean.find('=');
         if (oppos == -1) {
-            fout << prim << " Œ¯Ë·Í‡: ÌÂÚ ÓÔÂ‡ˆËË\n";
-            cout << "Œ¯Ë·Í‡: ÌÂÚ ÓÔÂ‡ˆËË\n";
+            fout << prim << " –û—à–∏–±–∫–∞: –Ω–µ—Ç –æ–ø–µ—Ä–∞—Ü–∏–∏\n";
+            cout << "–û—à–∏–±–∫–∞: –Ω–µ—Ç –æ–ø–µ—Ä–∞—Ü–∏–∏\n";
             continue;
         }
         string num1 = clean.substr(0, oppos);
         string num2 = clean.substr(oppos + 1, ravpos - oppos - 1);
         if (num1.empty() || num2.empty()) {
-            fout << prim << " Œ¯Ë·Í‡: ÔÛÒÚÓÂ ˜ËÒÎÓ\n";
-            cout << "Œ¯Ë·Í‡: ÔÛÒÚÓÂ ˜ËÒÎÓ\n";
+            fout << prim << " –û—à–∏–±–∫–∞: –ø—É—Å—Ç–æ–µ —á–∏—Å–ª–æ\n";
+            cout << "–û—à–∏–±–∫–∞: –ø—É—Å—Ç–æ–µ —á–∏—Å–ª–æ\n";
             continue;
         }
         bool vnum1 = true, vnum2 = true;
@@ -197,13 +197,13 @@ void Five5() {
         for (char c : num2) if (c < '0' || c > '7') vnum2 = false;
 
         if (!vnum1 || !vnum2) {
-            fout << prim << " Œ¯Ë·Í‡: ÌÂ ‚ÓÒ¸ÏÂË˜ÌÓÂ ˜ËÒÎÓ\n";
-            cout << "Œ¯Ë·Í‡: ÌÂ ‚ÓÒ¸ÏÂË˜ÌÓÂ ˜ËÒÎÓ\n";
+            fout << prim << " –û—à–∏–±–∫–∞: –Ω–µ –≤–æ—Å—å–º–µ—Ä–∏—á–Ω–æ–µ —á–∏—Å–ª–æ\n";
+            cout << "–û—à–∏–±–∫–∞: –Ω–µ –≤–æ—Å—å–º–µ—Ä–∏—á–Ω–æ–µ —á–∏—Å–ª–æ\n";
             continue;
         }
         if (num1.size() > 3 || num2.size() > 3) {
-            fout << prim << " Œ¯Ë·Í‡: ˜ËÒÎÓ ·ÓÎÂÂ ÚÂıÁÌ‡˜ÌÓ„Ó\n";
-            cout << "Œ¯Ë·Í‡: ˜ËÒÎÓ ·ÓÎ¸¯Â ÚÂıÁÌ‡˜ÌÓ„Ó\n";
+            fout << prim << " –û—à–∏–±–∫–∞: —á–∏—Å–ª–æ –±–æ–ª–µ–µ —Ç—Ä–µ—Ö–∑–Ω–∞—á–Ω–æ–≥–æ\n";
+            cout << "–û—à–∏–±–∫–∞: —á–∏—Å–ª–æ –±–æ–ª—å—à–µ —Ç—Ä–µ—Ö–∑–Ω–∞—á–Ω–æ–≥–æ\n";
             continue;
         }
         int n1 = 0, n2 = 0;
@@ -233,5 +233,5 @@ void Five5() {
     } 
     fin.close();
     fout.close();
-    cout << "ŒÚ‚ÂÚ˚ Á‡ÔËÒ‡Ì˚ ‚ Ù‡ÈÎ FN2.txt" << endl;
+    cout << "–û—Ç–≤–µ—Ç—ã –∑–∞–ø–∏—Å–∞–Ω—ã –≤ —Ñ–∞–π–ª FN2.txt" << endl;
 }
